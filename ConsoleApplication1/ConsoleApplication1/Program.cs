@@ -293,12 +293,12 @@ class Program
         //Calculate(10, 20, out Total, out Product);
         //Console.WriteLine("Sum = {0} && Prduct = {1}", Total, Product);
         //Console.ReadLine();
-        int[] numbers = new int[3];
-        numbers[0] = 101;
-        numbers[1] = 102;
-        numbers[2] = 103;
-        ParamsMethod(numbers);
-        Console.ReadLine();
+        //int[] numbers = new int[3];
+        //numbers[0] = 101;
+        //numbers[1] = 102;
+        //numbers[2] = 103;
+        //ParamsMethod(numbers);
+        //Console.ReadLine();
     }
     //public  static void SimpleMethod (ref int j)
     //{
@@ -310,15 +310,15 @@ class Program
     //    Product = FN * SN;
     //}
 
-    public static void ParamsMethod (params int[] numbers)
-    {
+    //public static void ParamsMethod (params int[] numbers)
+    //{
 
-        Console.WriteLine("There are {0} elements",numbers.Length);
-        foreach (var item in numbers)
-        {
-            Console.WriteLine(item);
-        }
-    }
+    //    Console.WriteLine("There are {0} elements",numbers.Length);
+    //    foreach (var item in numbers)
+    //    {
+    //        Console.WriteLine(item);
+    //    }
+    //}
 
 
 }
