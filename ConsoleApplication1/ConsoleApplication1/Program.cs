@@ -245,43 +245,80 @@ class Program
         //Console.ReadLine();
 
 
-        Program p = new Program();
-        p.EvenNumber();
-        //invoke the third method
-        int Sum = p.Add(10, 20);
-        Console.WriteLine("Sum = {0}", Sum);
+        //    Program p = new Program();
+        //    p.EvenNumber();
+        //    //invoke the third method
+        //    int Sum = p.Add(10, 20);
+        //    Console.WriteLine("Sum = {0}", Sum);
 
-        //invoke the second method
-        Program.EvenNumbers(30);
+        //    //invoke the second method
+        //    Program.EvenNumbers(30);
 
 
+        //    Console.ReadLine();
+
+
+        //}
+        //public void EvenNumber()
+        //{
+        //    int Start = 0;
+        //    while (Start <= 20)
+        //    {
+        //        Console.WriteLine(Start);
+        //        Start = Start + 2;
+        //    }
+        //}
+        ////another method
+        //public static void EvenNumbers(int Target)
+        //{
+        //    int Start = 0;
+        //    while (Start <= Target)
+        //    {
+        //        Console.WriteLine(Start);
+        //        Start = Start + 2;
+        //    }
+        //}
+
+        //public int Add (int FN, int SN)
+        //{
+        //    return FN + SN;
+
+        //int i = 0;
+        //Program.SimpleMethod(ref i);
+        //Console.WriteLine(i);
+        //Console.ReadLine();
+
+        //int Total = 0;
+        //int Product = 0;
+        //Calculate(10, 20, out Total, out Product);
+        //Console.WriteLine("Sum = {0} && Prduct = {1}", Total, Product);
+        //Console.ReadLine();
+        int[] numbers = new int[3];
+        numbers[0] = 101;
+        numbers[1] = 102;
+        numbers[2] = 103;
+        ParamsMethod(numbers);
         Console.ReadLine();
-
-
     }
-    public void EvenNumber()
+    //public  static void SimpleMethod (ref int j)
+    //{
+    //    j = 101;
+    //}
+    //public static void Calculate (int FN, int SN, out int Sum, out int Product)
+    //{
+    //    Sum =  FN + SN;
+    //    Product = FN * SN;
+    //}
+
+    public static void ParamsMethod (params int[] numbers)
     {
-        int Start = 0;
-        while (Start <= 20)
+
+        Console.WriteLine("There are {0} elements",numbers.Length);
+        foreach (var item in numbers)
         {
-            Console.WriteLine(Start);
-            Start = Start + 2;
+            Console.WriteLine(item);
         }
     }
-    //another method
-    public static void EvenNumbers(int Target)
-    {
-        int Start = 0;
-        while (Start <= Target)
-        {
-            Console.WriteLine(Start);
-            Start = Start + 2;
-        }
-    }
 
-    public int Add (int FN, int SN)
-    {
-        return FN + SN;
-    }
 
 }
